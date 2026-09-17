@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, sans-serif;
+color: #1d3557;
+background-color: #f5faff;
+}
+
+/* Navbar */
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 8%;
+background-color: #023e8a;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.navbar h1 {
+color: white;
+font-size: 25px;
+}
+
+.navbar-links {
+display: flex;
+gap: 30px;
+}
+
+.navbar-links a {
+color: white;
+text-decoration: none;
+}
+
+.navbar-links a:hover {
+color: #90e0ef;
+}
+
+/* Home */
+
+.home {
+min-height: 90vh;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 50px;
+padding: 70px 8%;
+background-color: #eaf8ff;
+}
+
+.home-content {
+max-width: 550px;
+}
+
+.small-title {
+color: #0077b6;
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 2px;
+margin-bottom: 15px;
+}
+
+.home h2 {
+font-size: 55px;
+line-height: 1.1;
+color: #023e8a;
+margin-bottom: 25px;
+}
+
+.home-content > p:not(.small-title) {
+font-size: 18px;
+line-height: 1.7;
+margin-bottom: 30px;
+}
+
+.button {
+display: inline-block;
+padding: 14px 25px;
+background-color: #0077b6;
+color: white;
+text-decoration: none;
+border-radius: 6px;
+}
+
+.button:hover {
+background-color: #023e8a;
+}
+
+.home-image img {
+width: 450px;
+height: 400px;
+object-fit: cover;
+border-radius: 20px;
+}
+
+/* Services */
+
+.services {
+padding: 80px 8%;
+text-align: center;
+background-color: white;
+}
+
+.services h2,
+.about h2,
+.contact h2,
+.appointment h2 {
+font-size: 35px;
+color: #023e8a;
+margin-bottom: 40px;
+}
+
+.service-container {
+display: flex;
+justify-content: center;
+gap: 25px;
+}
+
+.service-card {
+width: 30%;
+padding: 35px 25px;
+background-color: #f5faff;
+border-radius: 12px;
+box-shadow: 0 5px 15px #00000015;
+}
+
+.service-card:hover {
+transform: translateY(-8px);
+transition: 0.3s;
+}
+
+.icon {
+font-size: 40px;
+margin-bottom: 15px;
+}
+
+.service-card h3 {
+color: #0077b6;
+margin-bottom: 15px;
+}
+
+.service-card p {
+line-height: 1.6;
+}
+
+/* About */
+
+.about {
+display: flex;
+align-items: center;
+gap: 60px;
+padding: 80px 8%;
+background-color: #caf0f8;
+}
+
+.about-image,
+.about-content {
+width: 50%;
+}
+
+.about-image img {
+width: 100%;
+border-radius: 15px;
+}
+
+.about-content h2 {
+margin-bottom: 20px;
+}
+
+.about-content p {
+line-height: 1.7;
+margin-bottom: 20px;
+}
+
+/* Contact */
+
+.contact {
+text-align: center;
+padding: 80px 8%;
+background-color: white;
+}
+
+.contact-container {
+display: flex;
+justify-content: center;
+gap: 25px;
+}
+
+.contact-card {
+width: 30%;
+padding: 30px;
+background-color: #f5faff;
+border-radius: 10px;
+}
+
+.contact-icon {
+font-size: 35px;
+margin-bottom: 15px;
+}
+
+.contact-card h3 {
+color: #0077b6;
+margin-bottom: 10px;
+}
+
+/* Appointment */
+
+.appointment {
+padding: 80px 20px;
+background-color: #eaf8ff;
+text-align: center;
+}
+
+.appointment form {
+max-width: 550px;
+margin: auto;
+padding: 35px;
+background-color: white;
+border-radius: 12px;
+box-shadow: 0 5px 15px #00000015;
+text-align: left;
+}
+
+.appointment label {
+display: block;
+margin-bottom: 7px;
+font-weight: bold;
+}
+
+.appointment input,
+.appointment textarea {
+width: 100%;
+padding: 12px;
+margin-bottom: 18px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 15px;
+}
+
+.appointment textarea {
+height: 100px;
+resize: vertical;
+}
+
+.appointment button {
+width: 100%;
+padding: 13px;
+border: none;
+border-radius: 5px;
+background-color: #0077b6;
+color: white;
+font-size: 16px;
+cursor: pointer;
+}
+
+.appointment button:hover {
+background-color: #023e8a;
+}
+
+#successMessage {
+margin-top: 15px;
+text-align: center;
+font-weight: bold;
+}
+
+/* Footer */
+
+.footer {
+text-align: center;
+padding: 40px 20px;
+background-color: #023e8a;
+color: white;
+}
+
+.footer h2 {
+margin-bottom: 15px;
+}
+
+.footer p {
+margin-bottom: 15px;
+}
+
+.footer-links {
+display: flex;
+justify-content: center;
+gap: 25px;
+margin: 20px 0;
+}
+
+.footer-links a {
+color: white;
+text-decoration: none;
+}
+
+.footer-links a:hover {
+color: #90e0ef;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+
+
+.navbar {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.navbar-links {
+    gap: 15px;
+}
+
+.home {
+    flex-direction: column;
+    text-align: center;
+}
+
+.home h2 {
+    font-size: 40px;
+}
+
+.home-image img {
+    width: 100%;
+    height: 300px;
+}
+
+.service-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-card {
+    width: 100%;
+    max-width: 400px;
+}
+
+.about {
+    flex-direction: column;
+}
+
+.about-image,
+.about-content {
+    width: 100%;
+}
+
+.contact-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-card {
+    width: 100%;
+    max-width: 400px;
+}
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+.navbar h1 {
+    font-size: 22px;
+}
+
+.navbar-links {
+    gap: 10px;
+}
+
+.home h2 {
+    font-size: 32px;
+}
+
+.services h2,
+.about h2,
+.contact h2,
+.appointment h2 {
+    font-size: 28px;
+}
+
+.appointment form {
+    padding: 20px;
+}
+
+}
